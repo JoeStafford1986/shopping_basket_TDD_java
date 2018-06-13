@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc7b9d-8f2f-4e83-bfbc-9388ade807db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/BasketTest.class" afterPath="$PROJECT_DIR$/out/test/classes/BasketTest.class" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,12 +53,14 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+            <state relative-caret-position="416">
+              <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#2242#2243#0" expanded="true" />
+                <element signature="e#2302#2303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -390,8 +393,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Basket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
       </list>
     </option>
   </component>
@@ -484,7 +487,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.canCalculateTotalCostSingleItem">
+  <component name="RunManager" selected="JUnit.BasketTest.canCalculateTotalCostEmpty">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -505,6 +508,66 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="BasketTest.canCalculateTotalCostEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="shopping_basket_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canCalculateTotalCostEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canCalculateTotalCostMultipleItemsDifferent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="shopping_basket_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canCalculateTotalCostMultipleItemsDifferent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canCalculateTotalCostMultipleItemsSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="shopping_basket_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canCalculateTotalCostMultipleItemsSame" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="BasketTest.canCalculateTotalCostSingleItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -534,66 +597,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="METHOD_NAME" value="canEmptyBasketAlreadyEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canEmptyBasketMultipleItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="shopping_basket_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canEmptyBasketMultipleItems" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canEmptyBasketSingleItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="shopping_basket_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canEmptyBasketSingleItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canRemoveItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="shopping_basket_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canRemoveItem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -667,19 +670,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canRemoveItem" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketSingleItem" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketMultipleItems" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketAlreadyEmpty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostSingleItem" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketAlreadyEmpty" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostSingleItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostMultipleItemsSame" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostMultipleItemsDifferent" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostEmpty" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostSingleItem" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketAlreadyEmpty" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketMultipleItems" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketSingleItem" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canRemoveItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostEmpty" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostMultipleItemsDifferent" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostMultipleItemsSame" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostSingleItem" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasketAlreadyEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -703,14 +706,14 @@
     <history-entry file="All_in_shopping_basket_test - 2018.06.13 at 19h 00m 17s.xml">
       <configuration name="All in shopping_basket_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canAddItem - 2018.06.13 at 18h 57m 55s.xml">
-      <configuration name="BasketTest.canAddItem" configurationId="JUnit" />
+    <history-entry file="BasketTest_canCalculateTotalCostEmpty - 2018.06.13 at 19h 11m 07s.xml">
+      <configuration name="BasketTest.canCalculateTotalCostEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canAddMultipleItemsDifferent - 2018.06.13 at 19h 00m 08s.xml">
-      <configuration name="BasketTest.canAddMultipleItemsDifferent" configurationId="JUnit" />
+    <history-entry file="BasketTest_canCalculateTotalCostMultipleItemsDifferent - 2018.06.13 at 19h 10m 37s.xml">
+      <configuration name="BasketTest.canCalculateTotalCostMultipleItemsDifferent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canAddMultipleItemsSame - 2018.06.13 at 18h 59m 37s.xml">
-      <configuration name="BasketTest.canAddMultipleItemsSame" configurationId="JUnit" />
+    <history-entry file="BasketTest_canCalculateTotalCostMultipleItemsSame - 2018.06.13 at 19h 10m 07s.xml">
+      <configuration name="BasketTest.canCalculateTotalCostMultipleItemsSame" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canCalculateTotalCostSingleItem - 2018.06.13 at 19h 09m 32s.xml">
       <configuration name="BasketTest.canCalculateTotalCostSingleItem" configurationId="JUnit" />
@@ -817,12 +820,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        <state relative-caret-position="416">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#2242#2243#0" expanded="true" />
+            <element signature="e#2302#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
