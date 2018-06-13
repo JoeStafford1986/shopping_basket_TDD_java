@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc7b9d-8f2f-4e83-bfbc-9388ade807db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+              <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
@@ -723,13 +722,13 @@
     <history-entry file="BasketTest_canEmptyBasketMultipleItems - 2018.06.13 at 19h 07m 12s.xml">
       <configuration name="BasketTest.canEmptyBasketMultipleItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canEmptyBasketSingleItem - 2018.06.13 at 19h 05m 43s.xml">
-      <configuration name="BasketTest.canEmptyBasketSingleItem" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasketTest_canGetCountOfSameItems - 2018.06.13 at 19h 39m 47s.xml">
       <configuration name="BasketTest.canGetCountOfSameItems" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canGetCountOfSameItemsExcessItem - 2018.06.13 at 19h 40m 09s.xml">
+      <configuration name="BasketTest.canGetCountOfSameItemsExcessItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetCountOfSameItemsExcessItem - 2018.06.13 at 19h 40m 34s.xml">
       <configuration name="BasketTest.canGetCountOfSameItemsExcessItem" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -820,7 +819,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
