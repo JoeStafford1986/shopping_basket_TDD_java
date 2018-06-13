@@ -30,4 +30,14 @@ public class Basket {
         }
         return totalCost;
     }
+
+    public int getCountOfSameItems(Item itemToCheck) {
+        int itemsOfSameType = 0;
+        for (Item item : items) {
+            if (itemToCheck == item) {
+                itemsOfSameType++;
+            }
+        }
+        return itemsOfSameType;
+    }
 }
