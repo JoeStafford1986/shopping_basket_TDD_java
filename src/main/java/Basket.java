@@ -2,9 +2,11 @@ import java.util.ArrayList;
 
 public class Basket {
     private ArrayList<Item> items;
+    private double totalCost;
 
     public Basket() {
         items = new ArrayList<>();
+        totalCost = 0;
     }
 
     public int getItemsCount() {
@@ -23,8 +25,7 @@ public class Basket {
         this.items.clear();
     }
 
-    public int calculateTotalCost() {
-        int totalCost = 0;
+    public double calculateTotalCost() {
         for (Item item : items) {
             totalCost += item.getCost();
         }

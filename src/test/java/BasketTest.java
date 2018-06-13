@@ -73,26 +73,26 @@ public class BasketTest {
     @Test
     public void canCalculateTotalCostSingleItem() {
         basket.addItem(item1);
-        assertEquals(1, basket.calculateTotalCost());
+        assertEquals(1, basket.calculateTotalCost(), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostMultipleItemsSame() {
         basket.addItem(item1);
         basket.addItem(item1);
-        assertEquals(2, basket.calculateTotalCost());
+        assertEquals(2, basket.calculateTotalCost(), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostMultipleItemsDifferent() {
         basket.addItem(item1);
         basket.addItem(item2);
-        assertEquals(3, basket.calculateTotalCost());
+        assertEquals(3, basket.calculateTotalCost(), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostEmpty() {
-        assertEquals(0, basket.calculateTotalCost());
+        assertEquals(0, basket.calculateTotalCost(), 0.01);
     }
 
     @Test
