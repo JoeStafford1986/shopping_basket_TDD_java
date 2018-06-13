@@ -69,4 +69,10 @@ public class BasketTest {
         basket.removeAllItems();
         assertEquals(0, basket.getItemsCount());
     }
+
+    @Test
+    public void canCalculateTotalCostSingleItem() {
+        basket.addItem(item1);
+        assertEquals(1, basket.calculateTotalCost());
+    }
 }

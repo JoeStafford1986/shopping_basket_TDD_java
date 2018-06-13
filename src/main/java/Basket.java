@@ -22,4 +22,12 @@ public class Basket {
     public void removeAllItems() {
         this.items.clear();
     }
+
+    public int calculateTotalCost() {
+        int totalCost = 0;
+        for (Item item : items) {
+            totalCost += item.getCost();
+        }
+        return totalCost;
+    }
 }
