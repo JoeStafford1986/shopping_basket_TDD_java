@@ -29,6 +29,9 @@ public class Basket {
         for (Item item : items) {
             totalCost += item.getCost();
         }
+        if (totalCost > 20.00) {
+            totalCost = (totalCost / 100) * 90;
+        }
         return totalCost;
     }
 

@@ -52,14 +52,14 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="94" column="57" lean-forward="false" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
+            <state relative-caret-position="287">
+              <caret line="107" column="35" lean-forward="false" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#2260#2261#0" expanded="true" />
-                <element signature="e#2326#2327#0" expanded="true" />
+                <element signature="e#2266#2267#0" expanded="true" />
+                <element signature="e#2335#2336#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +68,8 @@
       <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="206">
+              <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="e#235#236#0" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
@@ -484,7 +484,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in shopping_basket_test">
+  <component name="RunManager" selected="JUnit.BasketTest.canDiscountBasketWhenTotalHighEnough">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -526,14 +526,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BasketTest.canCalculateTotalCostEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasketTest.canCalculateTotalCostAfterRemovingAnItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="shopping_basket_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canCalculateTotalCostEmpty" />
+      <option name="METHOD_NAME" value="canCalculateTotalCostAfterRemovingAnItem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -546,14 +546,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BasketTest.canGetCountOfSameItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasketTest.canDiscountBasketWhenTotalHighEnough" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="shopping_basket_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canGetCountOfSameItems" />
+      <option name="METHOD_NAME" value="canDiscountBasketWhenTotalHighEnough" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -667,19 +667,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostEmpty" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItems" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItemsExcessItem" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetCost" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItemsExcessItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetCost" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostAfterRemovingAnItem" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canDiscountBasketWhenTotalHighEnough" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetCost" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItemsExcessItem" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItems" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostEmpty" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canDiscountBasketWhenTotalHighEnough" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateTotalCostAfterRemovingAnItem" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetCost" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetCountOfSameItemsExcessItem" />
       </list>
     </recent_temporary>
   </component>
@@ -700,26 +700,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shopping_basket_test - 2018.06.13 at 19h 36m 02s.xml">
-      <configuration name="All in shopping_basket_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shopping_basket_test - 2018.06.13 at 19h 47m 20s.xml">
       <configuration name="All in shopping_basket_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_shopping_basket_test - 2018.06.13 at 19h 50m 22s.xml">
       <configuration name="All in shopping_basket_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canCalculateTotalCostEmpty - 2018.06.13 at 19h 11m 07s.xml">
-      <configuration name="BasketTest.canCalculateTotalCostEmpty" configurationId="JUnit" />
+    <history-entry file="All_in_shopping_basket_test - 2018.06.13 at 19h 59m 59s.xml">
+      <configuration name="All in shopping_basket_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canCalculateTotalCostMultipleItemsDifferent - 2018.06.13 at 19h 10m 37s.xml">
-      <configuration name="BasketTest.canCalculateTotalCostMultipleItemsDifferent" configurationId="JUnit" />
+    <history-entry file="BasketTest_canCalculateTotalCostAfterRemovingAnItem - 2018.06.13 at 20h 04m 52s.xml">
+      <configuration name="BasketTest.canCalculateTotalCostAfterRemovingAnItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetCountOfSameItems - 2018.06.13 at 19h 39m 47s.xml">
-      <configuration name="BasketTest.canGetCountOfSameItems" configurationId="JUnit" />
+    <history-entry file="BasketTest_canCalculateTotalCostAfterRemovingAnItem - 2018.06.13 at 20h 05m 09s.xml">
+      <configuration name="BasketTest.canCalculateTotalCostAfterRemovingAnItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetCountOfSameItemsExcessItem - 2018.06.13 at 19h 40m 09s.xml">
-      <configuration name="BasketTest.canGetCountOfSameItemsExcessItem" configurationId="JUnit" />
+    <history-entry file="BasketTest_canDiscountBasketWhenTotalHighEnough - 2018.06.13 at 20h 08m 25s.xml">
+      <configuration name="BasketTest.canDiscountBasketWhenTotalHighEnough" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canDiscountBasketWhenTotalHighEnough - 2018.06.13 at 20h 08m 34s.xml">
+      <configuration name="BasketTest.canDiscountBasketWhenTotalHighEnough" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canGetCountOfSameItemsExcessItem - 2018.06.13 at 19h 40m 34s.xml">
       <configuration name="BasketTest.canGetCountOfSameItemsExcessItem" configurationId="JUnit" />
@@ -773,6 +773,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -786,20 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ItemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="206">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="e#235#236#0" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
@@ -815,14 +815,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="94" column="57" lean-forward="false" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
+        <state relative-caret-position="287">
+          <caret line="107" column="35" lean-forward="false" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
           </folding>
         </state>
       </provider>
