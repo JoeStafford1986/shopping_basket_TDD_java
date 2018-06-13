@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Basket {
+    private ArrayList<Item> items;
+
+    public Basket() {
+        items = new ArrayList<>();
+    }
+
+    public int getItemsCount() {
+        return this.items.size();
+    }
+
+}
