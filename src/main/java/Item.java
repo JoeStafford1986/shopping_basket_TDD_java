@@ -1,11 +1,11 @@
 public class Item {
-    private int cost;
+    private double cost;
 
-    public Item(int cost) {
+    public Item(double cost) {
         this.cost = cost;
     }
 
-    public int getCost() {
+    public double getCost() {
         return this.cost;
     }
 }
