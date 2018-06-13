@@ -11,4 +11,8 @@ public class Basket {
         return this.items.size();
     }
 
+    public void addItem(Item item) {
+        items.add(item);
+    }
+
 }
