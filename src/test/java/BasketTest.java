@@ -54,4 +54,19 @@ public class BasketTest {
         basket.removeAllItems();
         assertEquals(0, basket.getItemsCount());
     }
+
+    @Test
+    public void canEmptyBasketMultipleItems() {
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item2);
+        basket.removeAllItems();
+        assertEquals(0, basket.getItemsCount());
+    }
+
+    @Test
+    public void canEmptyBasketAlreadyEmpty() {
+        basket.removeAllItems();
+        assertEquals(0, basket.getItemsCount());
+    }
 }
