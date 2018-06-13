@@ -18,4 +18,8 @@ public class Basket {
     public void removeItem(Item item) {
         items.remove(item);
     }
+
+    public void removeAllItems() {
+        this.items.clear();
+    }
 }
