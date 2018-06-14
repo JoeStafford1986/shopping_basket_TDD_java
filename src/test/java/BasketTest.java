@@ -108,7 +108,7 @@ public class BasketTest {
     @Test
     public void canDiscountBasketWhenTotalHighEnough() {
         basket.addItem(item3);
-        assertEquals(17.90, basket.calculateTotalCost(), 0.01);
+        assertEquals(18.90, basket.calculateTotalCost(), 0.01);
     }
 
     @Test
@@ -146,5 +146,15 @@ public class BasketTest {
         basket.addItem(item1);
         basket.addItem(item1);
         assertEquals(2, basket.getItemsOfSameType(item1).size());
+    }
+
+    @Test
+    public void canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket() {
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item2);
+        basket.addItem(item3);
+        assertEquals(3, basket.getItemsOfSameType(item1).size());
     }
 }

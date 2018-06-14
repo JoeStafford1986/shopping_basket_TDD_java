@@ -55,14 +55,5 @@ public class Basket {
         return itemsOfSameType;
     }
 
-    public double calculateCostOfDiscountedItemsOfSameType(ArrayList<Item> buyOneGetOneFreeItems) {
-        double totalCostOfItemsOfSameType = 0.00;
-        for (Item item : buyOneGetOneFreeItems) {
-            if (buyOneGetOneFreeItems.indexOf(item) % 2 != 0){
-                totalCostOfItemsOfSameType += item.getCost();
-            }
-            item.setIfCalculated(true);
-        }
-        return totalCostOfItemsOfSameType;
-    }
+
 }
