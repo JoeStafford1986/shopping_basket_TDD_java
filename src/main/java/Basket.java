@@ -48,7 +48,7 @@ public class Basket {
     public ArrayList<Item> getItemsOfSameType(Item item) {
         ArrayList<Item> itemsOfSameType = new ArrayList<>();
         for (Item otherItem : this.items) {
-            if (item == otherItem) {
+            if (item.getName().equals(otherItem.getName())) {
                 itemsOfSameType.add(otherItem);
             }
         }

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc7b9d-8f2f-4e83-bfbc-9388ade807db" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Basket.class" afterPath="$PROJECT_DIR$/out/production/classes/Basket.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" afterPath="$PROJECT_DIR$/src/main/java/Item.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ItemTest.java" afterPath="$PROJECT_DIR$/src/test/java/ItemTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -67,8 +65,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="122" column="47" lean-forward="true" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="156" column="30" lean-forward="true" selection-start-line="156" selection-start-column="30" selection-end-line="156" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
@@ -83,8 +81,8 @@
       <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
               <folding>
                 <element signature="e#235#236#0" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
@@ -404,9 +402,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Basket.java" />
         <option value="$PROJECT_DIR$/src/test/java/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Basket.java" />
       </list>
     </option>
   </component>
@@ -499,7 +497,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in shopping_basket_test">
+  <component name="RunManager" selected="JUnit.BasketTest.canGetArrayListOfItemsOfSameType">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -690,10 +688,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateCostOfDiscountedItemsOfSameType" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetArrayListOfItemsOfSameType" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetArrayListOfItemsOfSameType" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in shopping_basket_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canCalculateCostOfDiscountedItemsOfSameType" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetIfCalculatedTrue" />
       </list>
     </recent_temporary>
@@ -724,12 +722,6 @@
     <history-entry file="All_in_shopping_basket_test - 2018.06.14 at 07h 19m 31s.xml">
       <configuration name="All in shopping_basket_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canCalculateCostOfDiscountedItemsOfSameType - 2018.06.14 at 06h 57m 53s.xml">
-      <configuration name="BasketTest.canCalculateCostOfDiscountedItemsOfSameType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_canCalculateCostOfDiscountedItemsOfSameType - 2018.06.14 at 06h 58m 10s.xml">
-      <configuration name="BasketTest.canCalculateCostOfDiscountedItemsOfSameType" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasketTest_canCalculateCostOfDiscountedItemsOfSameType - 2018.06.14 at 06h 58m 44s.xml">
       <configuration name="BasketTest.canCalculateCostOfDiscountedItemsOfSameType" configurationId="JUnit" />
     </history-entry>
@@ -742,7 +734,13 @@
     <history-entry file="BasketTest_canCalculateCostOfDiscountedItemsOfSameType - 2018.06.14 at 07h 10m 51s.xml">
       <configuration name="BasketTest.canCalculateCostOfDiscountedItemsOfSameType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket - 2018.06.14 at 06h 56m 24s.xml">
+    <history-entry file="BasketTest_canGetArrayListOfItemsOfSameType - 2018.06.14 at 07h 21m 28s.xml">
+      <configuration name="BasketTest.canGetArrayListOfItemsOfSameType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket - 2018.06.14 at 07h 21m 06s.xml">
+      <configuration name="BasketTest.canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket - 2018.06.14 at 07h 21m 22s.xml">
       <configuration name="BasketTest.canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -807,23 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -842,10 +823,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="47" lean-forward="true" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="156" column="30" lean-forward="true" selection-start-line="156" selection-start-column="30" selection-end-line="156" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
