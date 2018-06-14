@@ -13,9 +13,9 @@ public class BasketTest {
     public void before() {
         basket = new Basket();
 
-        item1 = new Item(1.00);
-        item2 = new Item(2.00);
-        item3 = new Item(21.00);
+        item1 = new Item("football", 1.00);
+        item2 = new Item("basketball",2.00);
+        item3 = new Item("tennis ball", 21.00);
     }
 
     @Test
@@ -120,7 +120,7 @@ public class BasketTest {
 
     @Test
     public void canDiscountBasketWhenTotalHighEnoughMultipleLargeItems() {
-        Item item4 = new Item(500.00);
+        Item item4 = new Item("medicine ball", 500.00);
         basket.addItem(item3);
         basket.addItem(item4);
         assertEquals(468.90, basket.calculateTotalCost(), 0.01);
@@ -157,4 +157,11 @@ public class BasketTest {
         basket.addItem(item3);
         assertEquals(3, basket.getItemsOfSameType(item1).size());
     }
+
+//    @Test
+//    public void canGetCostOfBuyOneGetOneFreeItems() {
+//        basket.addItem(item1);
+//        basket.addItem(item1);
+//        assertEquals(1.00, basket.getCostOfBuyOneGetOneFree());
+//    }
 }

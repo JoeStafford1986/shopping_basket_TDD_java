@@ -8,7 +8,12 @@ public class ItemTest {
 
     @Before
     public void before() {
-        item = new Item(1.00);
+        item = new Item("football", 1.00);
+    }
+
+    @Test
+    public void canGetName() {
+        assertEquals("football", item.getName());
     }
 
     @Test

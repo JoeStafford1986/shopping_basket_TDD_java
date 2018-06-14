@@ -1,10 +1,16 @@
 public class Item {
+    private String name;
     private double cost;
     private boolean checkIfCalculated;
 
-    public Item(double cost) {
+    public Item(String name, double cost) {
+        this.name = name;
         this.cost = cost;
         this.checkIfCalculated = false;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public double getCost() {

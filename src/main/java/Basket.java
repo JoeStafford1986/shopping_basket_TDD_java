@@ -55,5 +55,7 @@ public class Basket {
         return itemsOfSameType;
     }
 
-
+//    public double getCostOfBuyOneGetOneFree(Item item) {
+//
+//    }
 }
