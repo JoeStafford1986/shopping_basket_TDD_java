@@ -1,12 +1,12 @@
 public class Item {
     private String name;
     private double cost;
-    private boolean checkIfCalculated;
+    private boolean twoForOne;
 
     public Item(String name, double cost) {
         this.name = name;
         this.cost = cost;
-        this.checkIfCalculated = false;
+        this.twoForOne = false;
     }
 
     public String getName() {
@@ -17,11 +17,11 @@ public class Item {
         return this.cost;
     }
 
-    public boolean checkIfCalculated() {
-        return this.checkIfCalculated;
+    public boolean checkTwoForOne() {
+        return this.twoForOne;
     }
 
-    public void setIfCalculated(boolean newStatus) {
-        this.checkIfCalculated = newStatus;
+    public void setTwoForOne(boolean newStatus) {
+        this.twoForOne = newStatus;
     }
 }

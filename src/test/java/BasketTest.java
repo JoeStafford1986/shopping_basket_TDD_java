@@ -86,6 +86,36 @@ public class BasketTest {
     }
 
     @Test
+    public void canCalculateTotalCostMultipleItemsSameTwoForOneEvenNumberOfItems() {
+        item1.setTwoForOne(true);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        assertEquals(1.00, basket.calculateTotalCost(), 0.01);
+    }
+
+    @Test
+    public void canCalculateTotalCostMultipleItemsSameTwoForOneOddNumberOfItems() {
+        item1.setTwoForOne(true);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        assertEquals(2.00, basket.calculateTotalCost(), 0.01);
+    }
+
+    @Test
+    public void canCalculateTotalCostMultipleItemsSameTwoForOneOddNumberOfItemsAndDifferentTypes() {
+        item1.setTwoForOne(true);
+        item2.setTwoForOne(true);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item2);
+        basket.addItem(item2);
+        basket.addItem(item2);
+        assertEquals(6.00, basket.calculateTotalCost(), 0.01);
+    }
+
+    @Test
     public void canCalculateTotalCostMultipleItemsDifferent() {
         basket.addItem(item1);
         basket.addItem(item2);
@@ -141,27 +171,27 @@ public class BasketTest {
         assertEquals(2, basket.getCountOfSameItems(item1));
     }
 
-    @Test
-    public void canGetArrayListOfItemsOfSameType() {
-        basket.addItem(item1);
-        basket.addItem(item1);
-        assertEquals(2, basket.getItemsOfSameType(item1).size());
-    }
-
-    @Test
-    public void canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket() {
-        basket.addItem(item1);
-        basket.addItem(item1);
-        basket.addItem(item1);
-        basket.addItem(item2);
-        basket.addItem(item3);
-        assertEquals(3, basket.getItemsOfSameType(item1).size());
-    }
-
+//    @Test
+//    public void canGetArrayListOfItemsOfSameType() {
+//        basket.addItem(item1);
+//        basket.addItem(item1);
+//        assertEquals(2, basket.getItemsOfSameType(item1).size());
+//    }
+//
+//    @Test
+//    public void canGetArrayListOfItemsOfSameTypeDifferentItemsInBasket() {
+//        basket.addItem(item1);
+//        basket.addItem(item1);
+//        basket.addItem(item1);
+//        basket.addItem(item2);
+//        basket.addItem(item3);
+//        assertEquals(3, basket.getItemsOfSameType(item1).size());
+//    }
+//
 //    @Test
 //    public void canGetCostOfBuyOneGetOneFreeItems() {
-//        basket.addItem(item1);
-//        basket.addItem(item1);
-//        assertEquals(1.00, basket.getCostOfBuyOneGetOneFree());
+//        basket.addItem(item2);
+//        basket.addItem(item2);
+//        assertEquals(2.00, basket.getCostOfBuyOneGetOneFreeItems(basket.getItemsOfSameType(item2)), 0.01);
 //    }
 }

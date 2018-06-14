@@ -26,8 +26,21 @@ public class Basket {
     }
 
     public double calculateTotalCost() {
+        ArrayList<Item> duplicateItems = new ArrayList<>();
+        for (Item duplicateItem : items) {
+            if (getCountOfSameItems(duplicateItem) > 1 && getCountOfSameItems(duplicateItem) % 2 != 0 && !duplicateItems.contains(duplicateItem)) {
+                duplicateItems.add(duplicateItem);
+            }
+        }
         for (Item item : this.items) {
-            totalCost += item.getCost();
+            if ( item.checkTwoForOne() && getCountOfSameItems(item) > 1) {
+                totalCost += (item.getCost() / 2);
+            } else {
+                totalCost += item.getCost();
+            }
+        }
+        for (Item duplicateItem : duplicateItems) {
+            totalCost += (duplicateItem.getCost() / 2);
         }
         if (totalCost > 20.00) {
             totalCost = (totalCost / 100) * 90;
@@ -44,18 +57,4 @@ public class Basket {
         }
         return itemsOfSameType;
     }
-
-    public ArrayList<Item> getItemsOfSameType(Item item) {
-        ArrayList<Item> itemsOfSameType = new ArrayList<>();
-        for (Item otherItem : this.items) {
-            if (item.getName().equals(otherItem.getName())) {
-                itemsOfSameType.add(otherItem);
-            }
-        }
-        return itemsOfSameType;
-    }
-
-//    public double getCostOfBuyOneGetOneFree(Item item) {
-//
-//    }
 }

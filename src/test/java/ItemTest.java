@@ -23,12 +23,12 @@ public class ItemTest {
 
     @Test
     public void canCheckIfCalculatedStartsFalse() {
-        assertEquals(false, item.checkIfCalculated());
+        assertEquals(false, item.checkTwoForOne());
     }
 
     @Test
     public void canSetIfCalculatedTrue() {
-        item.setIfCalculated(true);
-        assertEquals(true, item.checkIfCalculated());
+        item.setTwoForOne(true);
+        assertEquals(true, item.checkTwoForOne());
     }
 }
