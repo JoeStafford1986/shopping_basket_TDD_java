@@ -15,4 +15,10 @@ public class CustomerTest {
     public void canCheckLoyalty() {
         assertEquals(false, customer.checkLoyalty());
     }
+
+    @Test
+    public void canSetLoyalty() {
+        customer.setLoyalty(true);
+        assertEquals(false, customer.checkLoyalty());
+    }
 }

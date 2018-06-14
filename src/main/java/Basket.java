@@ -25,7 +25,7 @@ public class Basket {
         this.items.clear();
     }
 
-    public double calculateTotalCost() {
+    public double calculateTotalCost(Customer customer) {
         ArrayList<Item> duplicateItems = new ArrayList<>();
         for (Item duplicateItem : items) {
             if (getCountOfSameItems(duplicateItem) > 1 && getCountOfSameItems(duplicateItem) % 2 != 0 && !duplicateItems.contains(duplicateItem)) {
@@ -41,6 +41,9 @@ public class Basket {
         }
         for (Item duplicateItem : duplicateItems) {
             totalCost += (duplicateItem.getCost() / 2);
+        }
+        if (customer.checkLoyalty()) {
+            totalCost += (totalCost / 100) * 98;
         }
         if (totalCost > 20.00) {
             totalCost = (totalCost / 100) * 90;

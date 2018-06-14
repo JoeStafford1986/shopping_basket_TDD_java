@@ -8,14 +8,15 @@ public class BasketTest {
     private Item item1;
     private Item item2;
     private Item item3;
+    private Customer customer;
 
     @Before
     public void before() {
         basket = new Basket();
-
         item1 = new Item("football", 1.00);
         item2 = new Item("basketball",2.00);
         item3 = new Item("tennis ball", 21.00);
+        customer = new Customer();
     }
 
     @Test
@@ -75,14 +76,14 @@ public class BasketTest {
     @Test
     public void canCalculateTotalCostSingleItem() {
         basket.addItem(item1);
-        assertEquals(1, basket.calculateTotalCost(), 0.01);
+        assertEquals(1, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostMultipleItemsSame() {
         basket.addItem(item1);
         basket.addItem(item1);
-        assertEquals(2.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(2.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -90,7 +91,7 @@ public class BasketTest {
         item1.setTwoForOne(true);
         basket.addItem(item1);
         basket.addItem(item1);
-        assertEquals(1.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(1.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -99,7 +100,7 @@ public class BasketTest {
         basket.addItem(item1);
         basket.addItem(item1);
         basket.addItem(item1);
-        assertEquals(2.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(2.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -110,7 +111,7 @@ public class BasketTest {
         basket.addItem(item1);
         basket.addItem(item2);
         basket.addItem(item2);
-        assertEquals(3.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(3.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -123,19 +124,19 @@ public class BasketTest {
         basket.addItem(item2);
         basket.addItem(item2);
         basket.addItem(item2);
-        assertEquals(6.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(6.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostMultipleItemsDifferent() {
         basket.addItem(item1);
         basket.addItem(item2);
-        assertEquals(3.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(3.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
     public void canCalculateTotalCostEmpty() {
-        assertEquals(0.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(0.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -143,20 +144,20 @@ public class BasketTest {
         basket.addItem(item1);
         basket.addItem(item2);
         basket.removeItem(item2);
-        assertEquals(1.00, basket.calculateTotalCost(), 0.01);
+        assertEquals(1.00, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
     public void canDiscountBasketWhenTotalHighEnough() {
         basket.addItem(item3);
-        assertEquals(18.90, basket.calculateTotalCost(), 0.01);
+        assertEquals(18.90, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
     public void canDiscountBasketWhenTotalHighEnoughMultipleItems() {
         basket.addItem(item1);
         basket.addItem(item3);
-        assertEquals(19.80, basket.calculateTotalCost(), 0.01);
+        assertEquals(19.80, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
@@ -164,7 +165,7 @@ public class BasketTest {
         Item item4 = new Item("medicine ball", 500.00);
         basket.addItem(item3);
         basket.addItem(item4);
-        assertEquals(468.90, basket.calculateTotalCost(), 0.01);
+        assertEquals(468.90, basket.calculateTotalCost(customer), 0.01);
     }
 
     @Test
