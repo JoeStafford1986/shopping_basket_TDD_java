@@ -43,7 +43,7 @@ public class Basket {
             totalCost += (duplicateItem.getCost() / 2);
         }
         if (customer.checkLoyalty()) {
-            totalCost += (totalCost / 100) * 98;
+            totalCost = (totalCost / 100) * 98;
         }
         if (totalCost > 20.00) {
             totalCost = (totalCost / 100) * 90;

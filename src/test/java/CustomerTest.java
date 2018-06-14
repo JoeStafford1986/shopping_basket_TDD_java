@@ -19,6 +19,6 @@ public class CustomerTest {
     @Test
     public void canSetLoyalty() {
         customer.setLoyalty(true);
-        assertEquals(false, customer.checkLoyalty());
+        assertEquals(true, customer.checkLoyalty());
     }
 }

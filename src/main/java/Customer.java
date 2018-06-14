@@ -8,4 +8,8 @@ public class Customer {
     public boolean checkLoyalty() {
         return this.loyal;
     }
+
+    public void setLoyalty(boolean newStatus) {
+        this.loyal = newStatus;
+    }
 }

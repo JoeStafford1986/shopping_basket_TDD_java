@@ -169,6 +169,13 @@ public class BasketTest {
     }
 
     @Test
+    public void canApplyLoyaltyDiscountToSimpleBasket() {
+        basket.addItem(item1);
+        customer.setLoyalty(true);
+        assertEquals(0.98, basket.calculateTotalCost(customer), 0.01);
+    }
+
+    @Test
     public void canGetCountOfSameItems() {
         basket.addItem(item1);
         basket.addItem(item1);
