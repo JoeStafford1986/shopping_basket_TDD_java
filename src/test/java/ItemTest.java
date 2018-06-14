@@ -20,4 +20,10 @@ public class ItemTest {
     public void canCheckIfCalculatedStartsFalse() {
         assertEquals(false, item.checkIfCalculated());
     }
+
+    @Test
+    public void canSetIfCalculatedTrue() {
+        item.setIfCalculated(true);
+        assertEquals(true, item.checkIfCalculated());
+    }
 }

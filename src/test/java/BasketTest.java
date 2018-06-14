@@ -140,4 +140,11 @@ public class BasketTest {
         basket.addItem(item2);
         assertEquals(2, basket.getCountOfSameItems(item1));
     }
+
+    @Test
+    public void canGetArrayListOfItemsOfSameType() {
+        basket.addItem(item1);
+        basket.addItem(item1);
+        assertEquals(2, basket.getItemsOfSameType(item1).size());
+    }
 }

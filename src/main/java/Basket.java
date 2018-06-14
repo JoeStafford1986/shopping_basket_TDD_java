@@ -14,7 +14,7 @@ public class Basket {
     }
 
     public void addItem(Item item) {
-        items.add(item);
+        this.items.add(item);
     }
 
     public void removeItem(Item item) {
@@ -26,7 +26,7 @@ public class Basket {
     }
 
     public double calculateTotalCost() {
-        for (Item item : items) {
+        for (Item item : this.items) {
             totalCost += item.getCost();
         }
         if (totalCost > 20.00) {
@@ -37,11 +37,32 @@ public class Basket {
 
     public int getCountOfSameItems(Item itemToCheck) {
         int itemsOfSameType = 0;
-        for (Item item : items) {
+        for (Item item : this.items) {
             if (itemToCheck == item) {
                 itemsOfSameType++;
             }
         }
         return itemsOfSameType;
+    }
+
+    public ArrayList<Item> getItemsOfSameType(Item item) {
+        ArrayList<Item> itemsOfSameType = new ArrayList<>();
+        for (Item otherItem : this.items) {
+            if (item == otherItem) {
+                itemsOfSameType.add(otherItem);
+            }
+        }
+        return itemsOfSameType;
+    }
+
+    public double calculateCostOfDiscountedItemsOfSameType(ArrayList<Item> buyOneGetOneFreeItems) {
+        double totalCostOfItemsOfSameType = 0.00;
+        for (Item item : buyOneGetOneFreeItems) {
+            if (buyOneGetOneFreeItems.indexOf(item) % 2 != 0){
+                totalCostOfItemsOfSameType += item.getCost();
+            }
+            item.setIfCalculated(true);
+        }
+        return totalCostOfItemsOfSameType;
     }
 }

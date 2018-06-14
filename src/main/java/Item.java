@@ -14,4 +14,8 @@ public class Item {
     public boolean checkIfCalculated() {
         return this.checkIfCalculated;
     }
+
+    public void setIfCalculated(boolean newStatus) {
+        this.checkIfCalculated = newStatus;
+    }
 }
