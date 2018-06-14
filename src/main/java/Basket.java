@@ -28,7 +28,7 @@ public class Basket {
     public double calculateTotalCost(Customer customer) {
         ArrayList<Item> duplicateItems = new ArrayList<>();
         for (Item duplicateItem : items) {
-            if (getCountOfSameItems(duplicateItem) > 1 && getCountOfSameItems(duplicateItem) % 2 != 0 && !duplicateItems.contains(duplicateItem)) {
+            if (getCountOfSameItems(duplicateItem) > 2 && getCountOfSameItems(duplicateItem) % 2 != 0 && !duplicateItems.contains(duplicateItem)) {
                 duplicateItems.add(duplicateItem);
             }
         }
@@ -54,7 +54,7 @@ public class Basket {
     public int getCountOfSameItems(Item itemToCheck) {
         int itemsOfSameType = 0;
         for (Item item : this.items) {
-            if (itemToCheck == item) {
+            if (itemToCheck.getName().equals(item.getName())) {
                 itemsOfSameType++;
             }
         }

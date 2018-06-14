@@ -176,6 +176,24 @@ public class BasketTest {
     }
 
     @Test
+    public void canApplyLoyaltyDiscountToSimpleBasketMultipleItems() {
+        basket.addItem(item1);
+        basket.addItem(item2);
+        customer.setLoyalty(true);
+        assertEquals(2.94, basket.calculateTotalCost(customer), 0.01);
+    }
+
+    @Test
+    public void canApplyLoyaltyDiscountToSimpleBasketMultipleItemsAndTwoForOne() {
+        item1.setTwoForOne(true);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item2);
+        customer.setLoyalty(true);
+        assertEquals(2.94, basket.calculateTotalCost(customer), 0.01);
+    }
+
+    @Test
     public void canGetCountOfSameItems() {
         basket.addItem(item1);
         basket.addItem(item1);
