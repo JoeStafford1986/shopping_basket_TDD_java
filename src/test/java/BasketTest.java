@@ -220,6 +220,17 @@ public class BasketTest {
     }
 
     @Test
+    public void applyAllThreeDiscounts() {
+        item1.setTwoForOne(true);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item1);
+        basket.addItem(item3);
+        customer.setLoyalty(true);
+        assertEquals(20.28, basket.calculateTotalCost(customer), 0.01);
+    }
+
+    @Test
     public void canGetCountOfSameItems() {
         basket.addItem(item1);
         basket.addItem(item1);
